@@ -269,7 +269,7 @@ gulp.task('build:posts', ['clean:posts'], function () {
  * @task build:site
  * Generate the site
 **/
-gulp.task('build:site',  ['clean', 'build:vendor', 'build:sass', 'build:js', 'build:templates', 'build:index', 'build:posts']);
+gulp.task('build:site',  ['clean', 'build:vendor', 'build:sass', 'build:js', 'build:index', 'build:posts']);
 
 
 // OTHER TASKS
