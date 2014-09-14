@@ -1,0 +1,12 @@
+extends ./layout.jade
+
+block content
+  include ./partials/_nav.jade
+
+  .post.container.push
+    header
+      h1.post-title.animated.fadeInDown= title
+      time.post-date(datetime="#{date}")= date
+
+    section
+      !=content

@@ -1,0 +1,24 @@
+extends ./layout.jade
+
+block content
+  // include ./partials/_nav.jade
+  .jumbo
+    .vertical.animated.fadeIn
+      h1.page-title.font-source-sans-pro Micheal Benedict
+      h5.page-description Building the cloud @twitter; @fab
+    
+    a.scroll-down.animated.bounce(href='#content')
+      &#x25BC;
+      span.hidden Scroll Down
+
+  .container#content
+    section.posts
+      h5(style='text-decoration: underline') Recent Posts
+      ul
+        each post in posts
+          li
+            h4.post-title
+              a(href='/posts/#{post.slug}.html')= post.title
+            time.post-date(datetime="#{post.date}")= post.date
+            // if post.excerpt
+            //   p.post-excerpt= post.excerpt

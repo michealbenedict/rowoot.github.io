@@ -1,0 +1,28 @@
+{
+  "name": "michealbenedict.com",
+  "version": "0.0.1",
+  "description": "",
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-util": "*",
+    "gulp-clean": "*",
+    "gulp-rename": "*",
+    "gulp-ruby-sass": "*",
+    "gulp-concat": "*",
+    "gulp-livereload": "*",
+    "gulp-jade": "*",
+    "node-static": "*",
+    "through2": "*",
+    "rimraf": "*",
+    "main-bower-files": "*",
+    "gulp-markdown": "*",
+    "jade": "*",
+    "moment": "*",
+    "gulp-front-matter": "*"
+  },
+  "keywords": [],
+  "author": "Micheal Benedict <micheal@visionmasterdesigns.com>",
+  "license": "Personal",
+  "dependencies": {
+  }
+}

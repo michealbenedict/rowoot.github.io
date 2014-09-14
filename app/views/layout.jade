@@ -1,0 +1,31 @@
+doctype
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(name="og:title" content="Micheal Benedict")
+    meta(name="og:description" content="Personal blog of Micheal Benedict which talks about technology.")
+    meta(name="description" content="Personal blog of Micheal Benedict which talks about technology.")
+    title Micheal Benedict
+    link(href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700|Source+Serif+Pro:400,',rel='stylesheet',type='text/css')
+
+    link(rel="stylesheet",href="/vendor/normalize-css/normalize.css")
+    link(rel="stylesheet",href="/vendor/animate.css/animate.css")
+    link(rel="stylesheet",href="/css/style.css")
+
+  body.typeset
+    block content
+
+    // .container
+    //   footer.text-center
+    //     hr
+    //     | Copyright [c] 2014 Micheal Benedict
+
+  script(type='text/javascript', src='/vendor/jquery/jquery.js')
+  script(type='text/javascript', src='/js/main.js')
+  script(type='text/javascript').
+    $(document).ready(function () {
+      $('.menu-link').bigSlide({
+          side: 'right'
+      });
+    });

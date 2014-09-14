@@ -1,0 +1,66 @@
+.jumbo {
+  position: relative;
+  display: table;
+  width: 100%;
+  height: 100%;
+  margin-bottom: emRhythm(5);
+  text-align: center;
+  background: #222 no-repeat center center;
+  background-size: cover;
+  overflow: hidden; 
+  background-image: url(https://cldup.com/GAd3TSHU_A.jpg);//url(https://i.cloudup.com/nNfRaX84zn.jpg);
+  
+  .vertical {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .page-title {
+    margin-top: emRhythm(-5);
+    margin-bottom: emRhythm(1);
+    letter-spacing: emRhythm(0.2);
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  .page-description {
+    color: rgba(0,0,0, 0.5);
+    font-weight: 400;
+  }
+
+  .scroll-down {
+    display: block;
+    position: absolute;
+    z-index: 100;
+    bottom: 45px;
+    left: 50%;
+    margin-left: -16px;
+    width: 34px;
+    height: 34px;
+    font-size: 34px;
+    text-align: center;
+    text-decoration: none;
+    color: rgba(255,255,255,0.7);
+  }
+}
+
+.posts {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin-bottom: emRhythm(5);
+    }
+  }
+
+  .post-title {
+    margin: 0;
+  }
+
+  .post-date {
+    color: rgba(0,0,0,0.5);
+    @include setType(6, $ms-down1);
+  }
+}

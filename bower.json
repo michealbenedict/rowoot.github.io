@@ -1,0 +1,11 @@
+{
+  "name": "droply.io",
+  "version": "0.0.1",
+  "description": "UI to interface with cloud storage providers",
+  "dependencies": {
+    "normalize-css" :"*",
+    "jquery"        :"*",
+    "animate.css"   :"*",
+    "typesettings"  :"*"
+  } 
+}

@@ -1,0 +1,83 @@
+@import "variables";
+@import "typeset";
+@import "grid";
+// Specify the number of columns and set column and gutter widths
+$columns: 12;
+$column-width: 60;
+$gutter-width: 20;
+$total-width: 100%;
+
+/* Base */
+html {
+  height: 100%;
+  max-height: 100%;
+}
+
+body {
+  color: $primary-text-color;
+  height: 100%;
+  max-height: 100%;
+}
+
+/* Common */
+.container {
+  margin: 0 auto;
+  max-width: emRhythm(96);
+  padding: 0 emRhythm(2) 0;
+  position: relative;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+a {
+  color: $primary-a-color;
+  text-decoration: none;
+}
+
+/* Fonts */
+.font-source-sans-pro {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.font-source-serif-pro {
+  font-family: 'Source Serif Pro', sans-serif;
+}
+.font-oxygen {
+  font-family: 'Oxygen', sans-serif;
+}
+
+.circular {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+
+hr {
+  margin-top: emRhythm(5);
+  margin-bottom: emRhythm(5);
+  border: 0;
+  border-top: 1px solid #EEE;
+  padding: 0;
+}
+
+/* ELEMENTS */
+footer {
+  padding-bottom: emRhythm(10);
+}
+
+@import "index";
+@import "post";
+@import "nav";

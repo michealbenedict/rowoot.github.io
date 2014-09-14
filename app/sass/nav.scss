@@ -1,0 +1,130 @@
+// Fix for bigSlide: https://github.com/ascott1/bigSlide.js/tree/master
+// Slide panel
+.panel {
+  position: fixed;
+  right: -15.625em;
+  width: 15.625em;
+  z-index: 9999;
+  background: #fff;
+  border-left: 1px solid #ccc;
+}
+
+// Base Nav styles
+.mast {
+  position: fixed;
+  z-index: 9999999;
+  width: 100%;
+  background: rgba(255,255,255, 0.95);
+  top: 0;
+  right: 0;
+  padding: 5px 0;
+  border-bottom: 1px solid #ccc;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.1);
+  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.1);
+
+ header {
+  @include column(3);
+  
+  /* Logo font */
+  .logo {
+    font-size: $ms-up1;
+    margin: 0;
+    padding: emRhythm(1.5);
+    color: rgba(0, 0, 0, 0.7);
+    text-transform: uppercase;
+  }
+ }
+
+ nav {
+  @include column(3);
+  @include push(6);
+
+  // Non drawer menu
+  .non-drawer {
+    display: block;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        float: right;
+        margin: 0 emRhythm(1.5);
+        a {
+          display: block;
+          padding: emRhythm(1.5);
+        }
+      }
+    }
+  }
+  
+  // Only for mobile: drawer menu
+  .drawer {
+    display: none;
+    visibility: hidden;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li {
+        padding: emRhythm(2) emRhythm(5);
+      }
+    }
+  }
+ }
+}
+
+
+// Smartphones (portrait and landscape)
+// Desktop less then 768px
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px),
+(min-width : 320px) and (max-width : 768px) {
+  .mast {
+    header {
+      @include column(9);
+      .logo {
+        padding: emRhythm(1.2);
+      }
+    } 
+
+    nav {
+      @include column(3);
+      .drawer {
+        display: block;
+        visibility: visible;
+        .menu-icon {
+          text-align: right;
+          padding: 0 emRhythm(1.2) 0 0;
+          margin: emRhythm(1.5);
+        }
+      }
+      .non-drawer {
+        display: none;
+      }
+    }
+  }
+}
+
+
+// iPads (portrait and landscape)
+// Desktop from 768px to 1024px
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px),
+(min-width : 768px) and(max-width : 1024px) {
+  .mast {
+    header {
+      @include column(6);
+    } 
+
+    nav {
+      @include column(3);
+      @include push(3);
+    }
+  }
+}
